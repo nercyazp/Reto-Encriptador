@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet');
+:root{
+    --fuente-inter: "Inter", sans-serif;
+    --color-Darkblue: #1F316F;
+    --textcolor-boton: #F7F7F7;
+    --textcolo-fondo: #F8EDE3;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: var(--textcolo-fondo);
+}
+.header__imagen{
+    display: flex;
+    margin-top: 0.625rem;
+    padding: 0.5rem;
+}
+
+.encriptador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.encriptador__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.encriptador__contenido__div1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .encriptador__contenido__texto{
+        background-color: var(--textcolo-fondo);
+        margin-top: 1rem;
+        margin-left: 18rem;
+        width: 80%;
+        padding: 0.31rem;
+        font-size: 2rem;
+        border: 0;   
+        text-align: left;
+        color: var(--color-Darkblue);
+        font-family: var(--fuente-inter);
+        font-weight: 400;
+    }
+
+    .encriptador__contenido__frame1{
+        width: 30%;
+        margin-left: 18rem;
+        margin-bottom: 0.9rem;
+    }
+}
+.encriptador__contenido__div2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 18rem;
+}
+.encriptador__contenido__boton{
+    font-family: var(--fuente-inter);
+    background-color: var(--color-Darkblue) ;
+    color: var(--textcolor-boton);
+    display: flex;
+    width: 100%;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.32rem;
+    border-radius: 1.875rem;
+}
+.encriptador__contenido__limpiar{
+    font-family: var(--fuente-inter);
+    background-color: lightblue;
+    border-radius: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3.75rem;
+    margin-left: 3.3125rem;
+}
+.encriptador__contenido__div3{
+    display: block;
+    flex-direction: column;
+    background-color: #fbfeff;
+    width: 20%;
+    height: 82vh; /* Ajusta el valor según sea necesario */
+    padding: 1.25rem;
+    margin-right: 6.25rem;
+    border-radius: 2.5rem;
+    position: relative; /* Necesitas establecer la posición del contenedor como relativa */
+    /* Ejemplo de altura del contenedor */
+}
+.encriptador__contenido__div3__imagen{
+    margin-top: 12rem;
+    width: 70%;
+    margin-left: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+.encriptador__contenido__div3__h1{
+    font-family: var(--fuente-inter);
+    font-size: 24;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.encriptador__contenido__div3__h2{
+    font-family: var(--fuente-inter);
+    font-size: 16;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.encriptador__contenido__div3__p{
+    font-family: var(--fuente-inter);
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(108, 108, 108);
+
+}
+.enciptador__contenido__div3__copiar{
+    font-family: var(--fuente-inter);
+    justify-content: baseline;
+    background-color: white;
+    font-size: 16;
+    font-weight: 400;
+    display: flex;
+    width: 50%;
+    height: 3.75rem;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.93rem;
+    border-radius: 1.875rem;
+    position: absolute; /* Necesitas establecer la posición del botón como absoluta */
+    bottom: 0.93rem; /* Posiciona el botón en la parte inferior del contenedor */
+    left: 30%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centro del botón */
+}
+.footer{
+    margin-top: 0.93rem;
+    background-color:black;
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*para ajustar la medida de la pantalla media queries, cuando la pantalla se encoge sobre todo para modo mobiles*/
+@media (max-width: 1000px) {
+    .encriptador {
+        display: flex;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .encriptador__contenido {
+        width: 50%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+    }
+
+    .encriptador__contenido__div1 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        display: flex;
+        flex-direction: column; /* Apila los elementos dentro del div1 */
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-left: 0px;
+    }
+    .encriptador__contenido__div1{
+        .encriptador__contenido__texto {
+            background-color: var(--textcolo-fondo);
+            margin-top: 1rem;
+            width: 150%;
+            height: 50vh;
+            padding: 0.31rem;
+            font-size: 2rem;
+            border: 0;
+            text-align: left; /* Alinea el texto a la izquierda */
+            color: var(--color-Darkblue);
+            font-family: var(--fuente-inter);
+            font-weight: 400;
+            margin-left: 0px; 
+        }
+        .encriptador__contenido__frame1{
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 0.9rem;
+        }
+    
+    }
+    
+    .encriptador__contenido__frame1 {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        margin-top: 1rem; /* Agrega un margen superior para separar la imagen del textarea */
+        margin-left: 0px;
+    }
+
+    .encriptador__contenido__div2 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        display: flex;
+        flex-direction: column; /* Apila los botones verticalmente */
+        align-items: center; /* Centra los botones horizontalmente */
+        margin-left: 0px;
+    }
+
+    .encriptador__contenido__div3 {
+        width: 60%;
+        width: fit-content;
+        margin-top: 1.25rem;
+        height: 30vh;
+        height: fit-content;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.encriptador__contenido__div3__imagen {
+    display: none;
+}
+
+    .encriptador__contenido__div3__p {
+        margin-bottom: 1rem; /* Agrega un margen inferior para separar el párrafo del título */
+    }
+
+    .encriptador__contenido__div3__h1,
+    .encriptador__contenido__div3__h2 {
+        text-align: center; /* Centra el texto de los títulos */
+    }
+
+    .enciptador__contenido__div3__copiar {
+        font-family: var(--fuente-inter);
+        justify-content: baseline;
+        background-color: white;
+        font-size: 16;
+        font-weight: 400;
+        display: flex;
+        width: 100%;
+        height: 3.75rem;
+        display: block;
+        margin-left: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.93rem;
+        border-radius: 1.875rem;
+        position: initial;
+        bottom: 0.93rem;
+        left: 30%;
+        transform: translateX(-50%);
+        top: 100px;
+    }
+    .encriptador__contenido__limpiar{
+        font-family: var(--fuente-inter);
+        background-color: lightblue;
+        border-radius: 3.75rem;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 3.75rem;
+        margin-left: 0;
+    }
+.footer{
+        margin-top: 0.93rem;
+        background-color:black;
+        color: white;
+        padding: 0.2rem;
+        text-align: center;
+        font-family: var(--fuente-inter);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="header__imagen" src="./assets/Logo.png" alt="">
+    </header>
+        
+    <main class="encriptador">
+    <section class="encriptador__contenido">
+
+        <div class="encriptador__contenido__div1">
+            <textarea class="encriptador__contenido__texto" id="textareaId" name="ingresarTexto" rows="15" cols="1" placeholder="Ingrese el texto aqui"></textarea>
+            <img class="encriptador__contenido__frame1" src="./assets/Frame 1.png" alt=""> 
+        </div>
+
+        <div class="encriptador__contenido__div2">
+            <button onclick="obtenerTextoEncriptar()" class="encriptador__contenido__boton">Encriptar</button>
+            <button onclick="obtenerTextoDesencriptar()" class="encriptador__contenido__boton">Desencriptar</button>
+            <button onclick="limpiarTextarea()" class="encriptador__contenido__limpiar">Limpiar</button>
+        </div>
+    </section>
+    <div class="encriptador__contenido__div3" id="contenidoDiv3">
+                    <p id="textoFinal" class="encriptador__contenido__div3__p" style="display: none;"></p>
+                    <img class="encriptador__contenido__div3__imagen" src="./assets/Muñeco.png" id="imgMuneco" alt="">
+                    <h1 class="encriptador__contenido__div3__h1" id="h1Mjs"> Ningun Mensaje fue encontrado</h1>
+                    <h2 class="encriptador__contenido__div3__h2" id="h2Mjs">Ingrese el texto que desea encriptar o desencriptar<h2>
+                    <button onclick="copiar()" class="enciptador__contenido__div3__copiar" id="bontonCopiar" style="display: none;">Copiar </button>
+    </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Nercy Zabala</p>
+    </footer>
+    <script src="app.js" defer></script>    
+</body>
+</html>
